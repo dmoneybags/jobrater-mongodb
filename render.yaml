@@ -7,3 +7,6 @@ services:
       name: data
       mountPath: /data/db
       sizeGB: 10
+    docker:
+      image: mongo:4.2
+      command: ["mongod", "--bind_ip", "127.0.0.1,52.41.36.82,54.191.253.12,44.226.122.3"]
